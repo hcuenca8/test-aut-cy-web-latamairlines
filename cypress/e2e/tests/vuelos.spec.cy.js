@@ -4,7 +4,7 @@ const EquipajePage = require("../pom/pages/vuelos/EquipajePage");
 const ResumenVueloPage = require("../pom/pages/vuelos/ResumenVueloPage");
 const VuelosRecomendadosPage = require("../pom/pages/vuelos/VuelosRecomendadosPage");
 
-describe('Vuelos', () => {
+describe('Gestionar Vuelo', () => {
 
   beforeEach(() => {
     //cy.homepage();
@@ -13,7 +13,6 @@ describe('Vuelos', () => {
   it('Consultar vuelos', () => {
 
     cy.homepage();
-    cy.log('inicio');
 
     ConsultaVuelosPage.buscar(
       //Sólo ida en clase Premium
@@ -35,7 +34,7 @@ describe('Vuelos', () => {
 
   })
 
-  it.only('Tramitar vuelos', () => {
+  it('Tramitar vuelos', () => {
 
     cy.goTo('https://www.latamairlines.com/co/es/ofertas-vuelos?origin=MDE&inbound=null&outbound=2024-03-17T17%3A00%3A00.000Z&destination=BOG&adt=1&chd=1&inf=0&trip=OW&cabin=PremiumEconomy&redemption=false&sort=RECOMMENDED');
 
@@ -48,7 +47,7 @@ describe('Vuelos', () => {
       [ {pasajero: [
           {peso: "23"},
           {peso: "15"},
-          {peso: "45"}
+          {peso: "45"} //especial
         ]},
         {pasajero:[
           {peso: "15"}
