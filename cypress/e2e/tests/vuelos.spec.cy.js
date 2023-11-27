@@ -10,7 +10,7 @@ describe('Gestionar Vuelo', () => {
     //cy.homepage();
   })
 
-  it('Consultar vuelos', () => {
+  it('Buscar vuelos', () => {
 
     cy.homepage();
 
