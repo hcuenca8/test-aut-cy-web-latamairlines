@@ -1,0 +1,22 @@
+{
+  "name": "test-aut-cy-web-latamairlines",
+  "version": "1.0.0",
+  "description": "Automatización de Pruebas E2E - Latam Airlines",
+  "main": "index.js",
+  "scripts": {
+    "cy:runner": "cypress open",
+    "cy:run:specs": "cypress run --spec cypress/e2e/tests --browser chrome --headed",
+    "cy:run:specs:headless": "cypress run --spec cypress/e2e/pom/tests --browser chrome --headless"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "cypress"
+  ],
+  "author": "hector.cuenca",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
